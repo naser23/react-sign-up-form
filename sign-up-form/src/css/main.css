@@ -45,8 +45,36 @@ body {
 }
 
 #root #container .right-side .form-area {
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: white;
+}
+
+#root #container .right-side .form-area .form-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+#root #container .right-side .form-area .form-style {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#root #container .right-side .form-area .form-style label {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
 }
 
 @media (min-width: 567.98px) {
@@ -68,14 +96,8 @@ body {
     background-color: #545452;
     background-size: contain;
   }
-  #root #container .right-side {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-  }
   #root #container .right-side .top-header {
-    width: 70%;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -86,12 +108,36 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: end;
+    padding: 1rem 2rem;
+    padding-top: 5rem;
   }
   #root #container .right-side .top-header h3 {
     font-size: 1.5rem;
   }
   #root #container .right-side .top-header p {
     font-size: 1.25rem;
+  }
+  #root #container .right-side .form-area {
+    padding: 2rem;
+  }
+  #root #container .right-side .form-area h3 {
+    font-size: 1.5rem;
+  }
+  #root #container .right-side .form-area .form-space {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 2rem;
+  }
+  #root #container .right-side .form-area .form-space .form-style {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=main.css.map */

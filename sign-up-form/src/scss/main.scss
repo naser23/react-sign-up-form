@@ -41,8 +41,26 @@ body {
       }
 
       .form-area {
-        padding: 1rem;
+        padding: 2rem 1rem;
         background-color: white;
+
+        .form-space {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding-top: 1rem;
+          gap: 1rem;
+        }
+
+        .form-style {
+          display: flex;
+          flex-direction: column;
+
+          & label {
+            text-transform: uppercase;
+            letter-spacing: 0.25rem;
+          }
+        }
       }
     }
   }

@@ -1,8 +1,22 @@
 import React from 'react';
+import FirstName from './forms/FirstName';
+import LastName from './forms/LastName';
+import Email from './forms/Email';
+import PhoneNumber from './forms/PhoneNumber';
+import PassWord from './forms/PassWord';
+import ConfirmPassWord from './forms/ConfirmPassWord';
 
 function FormArea() {
   return <div className="form-area">
-     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eligendi ratione quae et perferendis nisi consectetur, necessitatibus ipsam! Hic temporibus totam ut enim ratione, eaque fuga quas. Iste, aut magnam.</p>
+     <h3>Let's Do This!</h3>
+     <div className="form-space">
+        <FirstName />
+        <LastName />
+        <Email />
+        <PhoneNumber />
+        <PassWord />
+        <ConfirmPassWord />
+     </div>
   </div>;
 }
 

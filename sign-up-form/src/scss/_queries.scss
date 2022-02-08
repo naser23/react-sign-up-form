@@ -20,14 +20,16 @@
       }
 
       .right-side {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
+        // display: grid;
+        // grid-template-rows: 1fr 0.75fr 1fr;
 
         .top-header {
-          width: 70%;
+          width: 80%;
           display: flex;
           flex-direction: column;
           justify-content: end;
+          padding: 1rem 2rem;
+          padding-top: 5rem;
 
           & h3 {
             font-size: 1.5rem;
@@ -35,6 +37,26 @@
 
           & p {
             font-size: 1.25rem;
+          }
+        }
+
+        .form-area {
+          padding: 2rem;
+
+          & h3 {
+            font-size: 1.5rem;
+          }
+
+          .form-space {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            .form-style {
+              width: 40%;
+            }
           }
         }
       }
