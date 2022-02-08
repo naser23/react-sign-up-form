@@ -1,0 +1,23 @@
+@media (min-width: 567.98px) {
+  #container {
+    .hero-img {
+      height: 30vh;
+    }
+  }
+}
+
+@media (min-width: 991.98px) {
+  #root {
+    #container {
+      display: flex;
+
+      .hero-img {
+        width: 30%;
+        height: 100%;
+        background-image: url("../images/game-pass.jpg");
+        background-color: #545452;
+        background-size: contain;
+      }
+    }
+  }
+}
