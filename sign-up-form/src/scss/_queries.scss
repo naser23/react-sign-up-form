@@ -20,8 +20,8 @@
       }
 
       .right-side {
-        // display: grid;
-        // grid-template-rows: 1fr 0.75fr 1fr;
+        display: flex;
+        flex-direction: column;
 
         .top-header {
           width: 80%;
@@ -58,6 +58,10 @@
               width: 40%;
             }
           }
+        }
+
+        .finish-sign-up {
+          padding: 2rem 2rem;
         }
       }
     }

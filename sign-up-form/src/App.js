@@ -4,6 +4,7 @@ import RightSide from './components/RightSide';
 
 
 
+
 const App = () => {
   return (<main id="container">
   <HeroImg />
